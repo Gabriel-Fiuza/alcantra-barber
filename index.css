@@ -1,0 +1,249 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+button, .title, .written, .opening-hours, .opening, .final > p, .phone-contact, .email-contact{
+    font-size: 15px;
+}
+
+@font-face {
+    font-family: inria-light;
+    src: url(fonts/InriaSans-Light.ttf);
+}
+@font-face {
+    font-family: inria-bold;
+    src: url(fonts/InriaSans-Bold.ttf);
+}
+@font-face {
+    font-family: inria-regular;
+    src: url(fonts/InriaSans-Regular.ttf);
+}
+body{
+    width: 100%;
+    height: 100%;
+    background-image: url('img/background.jpeg');
+}
+.header{
+    display: flex;
+    align-items: center;
+    background-color: #000000;
+    justify-content: center;
+    width: 100%;
+    height: 55px;      
+}
+.header-photo{
+    height: 45px;
+}
+.barbershop{
+    height: 480px;
+    width: 360px;
+    overflow: hidden;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);;
+    /* border-radius: 10px; */
+    margin-top: 15px;
+    border: 1px solid #000;
+}
+.navigation{
+    position: absolute;
+    bottom: 8px;
+    display: flex;
+    left: 50%;
+    transform: translate(-50%);
+}
+.slides input{
+    display: none;
+}
+.slides{
+    display: flex;
+    width: 500%;
+    height: 100%;
+}
+.slides img{
+    width: 100%;
+    height: 100%;
+}
+.slide{
+    width: 20%;
+    transition: .6s;
+}
+.bar{
+    margin: 5px;
+    width: 30px;
+    height: 13px;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.bar:hover{
+    background-color: #fff;
+    transition: 0.4s;
+}
+#slide1:checked ~ .s1{
+    margin-left: 0;
+}
+#slide2:checked ~ .s1{
+    margin-left: -20%;
+}
+#slide3:checked ~ .s1{
+    margin-left: -40%;
+}
+
+.alcantra-barber{
+    margin-top: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5px;
+    border-bottom: 1px solid #000;
+}
+.alcantra-photo{
+    height: 80px;
+    width: 40%;
+}
+.title{
+    display: flex;
+    justify-content: center;
+    font-family: inria-bold;
+    margin-top: 20px;
+    letter-spacing: 2px;
+}
+.address{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    padding: 30px;
+    margin-right: 70px;
+
+}
+.written{
+    font-family: inria-bold;
+}
+.map{
+    height: 50px;
+    width: 50px;
+    margin-right: 70px;
+    box-shadow: 4px 4px 3px 2px #000
+}
+.location{
+    border-bottom: 1px solid #000;
+}
+.days-of-week{
+    display: flex;
+    gap: 200px;
+    margin: 35px;
+}
+
+.opening-hours{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: inria-bold;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #000;
+}
+.opening{
+    display: flex;
+    justify-content: center;
+    font-family: inria-bold;
+    margin-top: 20px;
+    letter-spacing: 2px;
+}
+button{
+    font-family: inria-bold;
+    background-color: #cccccc;
+    padding: 5px 40px;
+    box-shadow: 1px 1px 1px 1px #000;
+}
+.days, .hours{
+    margin-bottom: 10px;
+}
+.final{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.final > p{
+    margin: 20px 10px;
+    font-family: inria-bold;
+    letter-spacing: 2px;
+
+}
+.phone-contact, .email-contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: inria-regular;
+}
+.phone-contact > img, .email-contact > img{
+    width: 40px;
+    height: 40px;
+}
+.icons{
+    margin: 10px;
+    margin-bottom: 50px;
+    width: 50px;
+    height: 50px;
+    border-radius: 15%;
+}
+button:hover {
+    transition: 0.2s;
+    background-color: rgba(204, 204, 204, 0.5)
+}
+@media(max-width: 566px){
+    .written{
+        margin-left: 35px;
+    }
+    .barber-photo{
+        margin-top: 15px;}
+    .phone-contact > img, .email-contact > img{
+        width: 30px;
+        height: 30px;}
+    .icons{
+        margin: 10px;
+        margin-bottom: 30px;
+        width: 30px;
+        height: 30px;
+        border-radius: 15%;
+    }
+    .days-of-week{
+        display: flex;
+        gap: 80px;
+        margin: 35px;}
+    .header{
+        display: flex;
+        align-items: center;
+        background-color: #000000;
+        justify-content: center;
+        width: 100%;
+        height: 40px;      
+    }
+    .header-photo{
+        height: 35px;
+    }
+    .barbershop{
+        height: 240px;
+        width: 180px;}
+    .alcantra-photo{
+        height: 35px;
+        width: 50%;}
+    .map{
+        height: 35px;
+        width: 35px;
+        margin-right: 0px;
+        box-shadow: 4px 4px 3px 2px #000
+    }
+    button, .title, .written, .opening-hours, .opening, .final > p, .phone-contact, .email-contact{
+        font-size: 12px;
+    }
+}
+@media(max-width: 370px){
+    .written{
+        margin-left: 10px;
+    }
+}
