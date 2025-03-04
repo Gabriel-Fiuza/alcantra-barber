@@ -125,7 +125,7 @@ body{
     height: 50px;
     width: 50px;
     margin-right: 70px;
-    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.6);
+    box-shadow: 5px 5px 3px rgba(0, 0, 0, 0.6);
 }
 .location{
     border-bottom: 1px solid #000;
@@ -236,7 +236,7 @@ button:hover {
         height: 35px;
         width: 35px;
         margin-right: 0px;
-        box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.6);
+        box-shadow: 5px 5px 3px rgba(0, 0, 0, 0.6);
     }
     button, .title, .written, .opening-hours, .opening, .final > p, .phone-contact, .email-contact{
         font-size: 12px;
